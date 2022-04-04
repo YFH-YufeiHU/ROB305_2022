@@ -10,7 +10,6 @@ int main(){
     timespec time_ts_1,time_ts_2;
     timespec time_ts_now,time_ts_negate;
     double time_ms;
-    bool flag;
     timespec time_ts;
     time_ts_1.tv_sec = 1;
     time_ts_1.tv_nsec = 5e8;

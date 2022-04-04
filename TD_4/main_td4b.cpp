@@ -25,21 +25,21 @@ int main(int argc, char* argv[]){
     IncrThreadWithMutex* incrThreadWithMutex[nTasks];
     Chrono chrono;
 
-    for(int i=0;i<nTasks;i++){
+    for(loop_t i=0;i<nTasks;i++){
         incrThreadWithMutex[i] = new IncrThreadWithMutex(&data,&mutex);
     }
-    for (int i=0;i<nTasks;i++){
+    for (loop_t i=0;i<nTasks;i++){
         incrThreadWithMutex[i]->start();
     }
-    for (int i=0;i<nTasks;i++){
+    for (loop_t i=0;i<nTasks;i++){
         incrThreadWithMutex[i]->join();
     }
     chrono.stop();
     std::cout<<"Counter value with custom mutex ===>["<<incrThreadWithMutex[0]->data->counter<<"]"<<std::endl;
     std::cout<<"Execution time in the case of with using custom mutex is ===>["<<chrono.lap()<<"ms]"<<std::endl;
-    for(int i=0;i<nTasks;i++){
-        delete incrThreadWithMutex[i];
-    }
+    //for(int i=0;i<nTasks;i++){
+    //    delete incrThreadWithMutex[i];
+    //}
 
     return 0;
 }

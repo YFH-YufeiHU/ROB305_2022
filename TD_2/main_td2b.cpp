@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
 
     Data data = {nLoops, 0.0};
 
-    volatile bool stop = false;
+    //volatile bool stop = false;
     pthread_attr_t attr;
     pthread_attr_init(&attr);
     pthread_attr_setinheritsched(&attr, PTHREAD_EXPLICIT_SCHED);

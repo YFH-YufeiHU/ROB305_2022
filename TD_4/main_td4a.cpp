@@ -23,22 +23,22 @@ int main(int argc, char* argv[]){
     IncrThread* incrThread[nTasks];
     Chrono chrono;
 
-    for(int i=0;i<nTasks;i++){
+    for(loop_t i=0;i<nTasks;i++){
         incrThread[i] = new IncrThread(&data);
     }
-    for (int i=0;i<nTasks;i++){
+    for (loop_t i=0;i<nTasks;i++){
         incrThread[i]->start();
         execTime += incrThread[i]->execTime_ms();
     }
-    for (int i=0;i<nTasks;i++){
+    for (loop_t i=0;i<nTasks;i++){
         incrThread[i]->join();
     }
     chrono.stop();
     std::cout<<"Counter value without mutex ===>["<<incrThread[0]->data->counter<<"]"<<std::endl;
     std::cout<<"Execution time in the case of without using mutex is ===>["<<chrono.lap()<<" ms]"<<std::endl;
-    for(int i=0;i<nTasks;i++){
-        delete incrThread[i];
-    }
+    //for(loop_t i=0;i<nTasks;i++){
+    //    delete incrThread[i];
+    //}
 
     return 0;
 }

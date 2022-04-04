@@ -37,7 +37,7 @@ Calibrator::Calibrator(double samplingPeriod_ms, unsigned int nSamples) {
     looper.runLoop();
     stop();
 
-    for (int i =0;i < nSamples;i++){
+    for (unsigned int i =0;i < nSamples;i++){
         std::cout<<"Working on "<<i+1<<"th sample..."<<std::endl;
         x_average+=(i+1)*samplingPeriod_ms;
         y_average+= samples[i];

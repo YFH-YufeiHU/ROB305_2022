@@ -32,8 +32,7 @@ int main()
     sev.sigev_value.sival_ptr = (void*) &counter;
 
     timer_t tid;
-    int ret;
-    ret = timer_create(CLOCK_REALTIME, &sev, &tid);
+    timer_create(CLOCK_REALTIME, &sev, &tid);
 
     // launch timer
     struct itimerspec its;

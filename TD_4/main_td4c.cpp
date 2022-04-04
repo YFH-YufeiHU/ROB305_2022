@@ -24,36 +24,31 @@ int main(int argc, char* argv[]){
     SemaphoreProducer* semaphoreProducer[nProd];
     SemaphoreConsumer* semaphoreConsumer[nCons];
 
-    for(unsigned int i=0;i< nProd;++i){
+    for(loop_t i=0;i< nProd;++i){
         semaphoreProducer[i] = new SemaphoreProducer(&semaphore,maxCount);
     }
-    for(unsigned int i=0;i< nProd;++i){
+    for(loop_t i=0;i< nProd;++i){
         semaphoreProducer[i]->start();
     }
-    for(unsigned int i=0;i< nProd;++i) {
+    for(loop_t i=0;i< nProd;++i) {
         semaphoreProducer[i]->join();
         Tokens += semaphoreProducer[i]->getCounter();
     }
     std::cout<<"Tokens of semaphore Producer :"<<Tokens<<std::endl;
 
 
-    for(unsigned int i=0;i< nCons;++i){
+    for(loop_t i=0;i< nCons;++i){
         semaphoreConsumer[i] = new SemaphoreConsumer(&semaphore,maxCount);
     }
-    for(unsigned int i=0;i< nCons;++i){
+    for(loop_t i=0;i< nCons;++i){
         semaphoreConsumer[i]->start();
     }
-    for(unsigned int i=0;i< nCons;++i){
+    for(loop_t i=0;i< nCons;++i){
         semaphoreConsumer[i]->join();
         Tokens -= semaphoreConsumer[i]->getCounter();
     }
     std::cout<<"Tokens of semaphore Consumer :"<<Tokens<<std::endl;
 
-    for(int i=0;i<nCons;i++){
-        delete semaphoreConsumer[i];
-    }
-    for(int i=0;i<nProd;i++){
-        delete semaphoreProducer[i];
-    }
+    
     return 0;
 }

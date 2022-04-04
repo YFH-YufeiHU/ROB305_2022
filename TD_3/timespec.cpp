@@ -69,12 +69,12 @@ timespec  operator- (const timespec& time1_ts, const timespec& time2_ts){
     return timespec_subtract(time1_ts, time2_ts);
 }
 timespec& operator+= (timespec& time_ts, const timespec& delay_ts){
-    timespec* time;
+    timespec* time=0;
     *time = timespec_add(time_ts, delay_ts);
     return *time;
 }
 timespec& operator-= (timespec& time_ts, const timespec& delay_ts){
-    timespec* time;
+    timespec* time=0;
     *time =  timespec_subtract(time_ts, delay_ts);
     return *time;
 }

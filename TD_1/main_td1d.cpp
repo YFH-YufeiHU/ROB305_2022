@@ -63,6 +63,7 @@ void Timer(double duration_s,double& counter){
     timer_settime(tid,0,&its, nullptr);
 
     unsigned int iLoop = incr(nLoops, &counter, &pStop);
+    std::cout<<"iLoop :"<<iLoop<<std::endl;
     timer_delete(tid);
 }
 
