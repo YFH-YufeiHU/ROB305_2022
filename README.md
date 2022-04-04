@@ -31,7 +31,7 @@ arm-linux-g++ main_td2a.cpp  -o myTD2a -lrt -lpthread -Wall
 ```
 ### For td2-b, run:
 ```
-arm-linux-g++ main_td2b.cpp  -o myTD2b -lrt -lpthread -Wall
+arm-linux-g++ timespec.h timespec.cpp main_td2b.cpp  -o myTD2b -lrt -lpthread -Wall
 ```
 ### For td2-c, run:
 ```
