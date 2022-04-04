@@ -88,7 +88,7 @@ int main(int argc, char* argv[])
     std::cout << "Counter : " <<  data.counter << std::endl;
     clock_gettime(CLOCK_REALTIME,&time_end);
 
-    std::cout<<"Time : "<<timespec_to_ms(time_end-time_start) <<"ms"<<std::endl;
+    std::cout<<"Time : "<<timespec_to_ms(time_end-time_start)<<"us"<<std::endl;
 
     return 0;
 }
