@@ -69,4 +69,10 @@ g++ timespec.h timespec.cpp  Mutex.h Mutex.cpp Chrono.h Chrono.cpp PosixThread.c
 g++ timespec.h timespec.cpp  Mutex.h Mutex.cpp Semaphore.h Semaphore.cpp PosixThread.cpp PosixThread.h main_td4c.cpp  -o myTD4c -lrt -lpthread -Wall
 ```
 
+## TD5
+
+### For td5-a, run:
+```
+g++ timespec.h timespec.cpp  Mutex.h Mutex.cpp Looper.cpp Looper.h Timer.cpp Timer.h Chrono.h Chrono.cpp PosixThread.cpp PosixThread.h main_td5a.cpp  -o myTD5a -lrt -lpthread -Wall
+```
 
