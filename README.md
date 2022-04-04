@@ -27,3 +27,17 @@ arm-linux-g++ timespec.h timespec.cpp main_td1d.cpp  -o myTD1d -lrt -lpthread -W
 arm-linux-g++ timespec.h timespec.cpp main_td1e.cpp  -o myTD1e -lrt -lpthread -Wall
 ```
 
+## TD2
+
+### For td2-a, run:
+```
+arm-linux-g++ main_td2a.cpp  -o myTD2a -lrt -lpthread -Wall
+```
+### For td2-b, run:
+```
+arm-linux-g++ main_td2b.cpp  -o myTD2b -lrt -lpthread -Wall
+```
+### For td2-c, run:
+```
+arm-linux-g++ main_td2c.cpp  -o myTD2c -lrt -lpthread -Wall
+```
