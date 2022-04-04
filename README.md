@@ -53,3 +53,20 @@ arm-linux-g++ timespec.h timespec.cpp Timer.h Timer.cpp CountDown.h CountDown.cp
 ```
 g++ timespec.h timespec.cpp Timer.h Timer.cpp Looper.h Looper.cpp main_td3c.cpp  -o myTD3c -lrt -lpthread -Wall
 ```
+
+## TD4
+
+### For td4-a, run:
+```
+g++ timespec.h timespec.cpp  Mutex.h Mutex.cpp Chrono.h Chrono.cpp PosixThread.cpp PosixThread.h main_td4a.cpp  -o myTD4a -lrt -lpthread -Wall
+```
+### For td4-b, run:
+```
+g++ timespec.h timespec.cpp  Mutex.h Mutex.cpp Chrono.h Chrono.cpp PosixThread.cpp PosixThread.h main_td4b.cpp  -o myTD4b -lrt -lpthread -Wall
+```
+### For td4-c, run:
+```
+g++ timespec.h timespec.cpp  Mutex.h Mutex.cpp Semaphore.h Semaphore.cpp PosixThread.cpp PosixThread.h main_td4c.cpp  -o myTD4c -lrt -lpthread -Wall
+```
+
+
