@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Remote Host (c14902aa-2370-46f2-b91e-c7c30acf705a)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.0ve6V9lZWv" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote-host" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="Remote Host yufei (e4c730b9-2f50-48f6-ad71-90cfa07fb003)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/student/Desktop/ROB305/TD_2" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote-host-yufei" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
